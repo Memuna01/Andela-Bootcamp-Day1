@@ -39,4 +39,5 @@ describe("An Employee", function() {
     it("is an instance of its parent class HumanBeing", function() {
         expect(employee instanceof app1).toBe(true)
     });
-});
+
+ });
