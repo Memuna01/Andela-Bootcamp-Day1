@@ -36,8 +36,7 @@ describe("An Employee", function() {
     it("can receive salary", function() {
         expect(employee.receiveSalary("mid-level")).toEqual(250000);
     });
-
-    it("is an instance of its parent class", function() {
+    it("is an instance of its parent class HumanBeing", function() {
         expect(employee instanceof app1).toBe(true)
     });
 });
