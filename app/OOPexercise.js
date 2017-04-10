@@ -1,11 +1,25 @@
 class HumanBeing{
     constructor(){
-        //private properties in javascript prefixed with an underscore
+        //private properties in javascript are prefixed with an underscore. 
         this._head = 1;
         this._hands = 2;
         this._legs = 2;
         this._eyes = 2;
-        this._mouth = 1;
+    }
+    //getter methods to access private properties: depicts encapsulation
+    //class methods
+    getHead(){
+        return this._head;
+    }
+
+    getHands(){
+        return this._hands;
+    }
+    getLegs(){
+        return this._legs;
+    }
+    getEyes(){
+        return this._eyes;
     }
 
     closeEyes(){
@@ -34,14 +48,11 @@ class HumanBeing{
         }
         return 'I have nothing to say';
     }
-
-
 }
 
 class Employee extends HumanBeing{
     constructor(job_title){
-        //inherits the constructor of 
-        super();
+        super(); //inherits the constructor of its parent HumanBeing
         this._job_title = job_title || "software engineer";
         this._salary = 0;
     }
