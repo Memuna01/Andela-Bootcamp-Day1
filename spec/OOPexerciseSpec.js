@@ -21,7 +21,7 @@ describe("Human Being", function() {
 
 });
 
-describe("employee", function() {
+describe("An Employee", function() {
     var employee;
     beforeEach(function() {
         employee = new app2();
@@ -29,7 +29,15 @@ describe("employee", function() {
     it("has a head ", function() {
         expect(employee.getHead()).toEqual(1);
     });
+    it("has 2 legs", function() {
+        expect(employee.getLegs()).toEqual(2);
+    });
+
     it("can receive salary", function() {
         expect(employee.receiveSalary("mid-level")).toEqual(250000);
+    });
+
+    it("is an instance of its parent class", function() {
+        expect(employee instanceof app1).toBe(true)
     });
 });
