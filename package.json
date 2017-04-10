@@ -1,0 +1,14 @@
+{
+  "name": "andela-bootcamp-day1",
+  "version": "1.0.0",
+  "description": "Repo to demonstrate my knowledge of OOP concepts",
+  "main": "app/OOPexercise.js",
+  "scripts": {
+    "test": "jasmine-node spec/OOPexerciseSpec.js"
+  },
+  "author": "Memuna Haruna",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
+}
